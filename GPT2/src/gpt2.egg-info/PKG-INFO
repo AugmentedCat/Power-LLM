@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: gpt2
+Version: 1.0.0
+Summary: GPT-2 PyTorch Implementation
+Author: affjljoo3581
+License: Apache-2.0
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: regex
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

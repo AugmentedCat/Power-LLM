@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model checkpoints and data
+*.ckpt
+*.pth
+*.bin
+*.safetensors
+checkpoints/
+outputs/
+wandb/
+
+# Dataset files
+GPT2/build/corpus.*.txt
+GPT2/build/*.txt
+data/
+datasets/
+
+# Temporary files
+nul
+=*
+*.tmp
