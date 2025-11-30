@@ -50,6 +50,7 @@ DROPOUT=0
 USE_RELU=1
 LEARNING_RATE=0.00003
 POST_POWER_NORM=0
+USE_AMP=1  # Mixed precision (BF16) - 3x faster, 43% less memory
 
 # Training steps
 TOTAL_STEPS=1000000
@@ -71,6 +72,7 @@ echo "  - Dropout: $DROPOUT"
 echo "  - Use ReLU: $USE_RELU (1=enabled, 0=disabled)"
 echo "  - Learning Rate: $LEARNING_RATE"
 echo "  - Post-Power Norm: $POST_POWER_NORM (1=enabled, 0=disabled)"
+echo "  - Mixed Precision: $USE_AMP (1=BF16 enabled, 0=FP32)"
 echo ""
 echo "Training Steps:"
 echo "  - Total Steps: $TOTAL_STEPS"
@@ -112,6 +114,10 @@ fi
 
 if [ "$POST_POWER_NORM" = "1" ]; then
     CMD="$CMD --use_post_power_norm"
+fi
+
+if [ "$USE_AMP" = "1" ]; then
+    CMD="$CMD --use_amp"
 fi
 
 # Execute command
