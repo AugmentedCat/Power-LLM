@@ -55,7 +55,7 @@ def process_example(example, seq_len=128):
     return sequences
 
 
-def download_and_tokenize_c4(output_dir='build', seq_len=128, num_workers=None, max_train_docs=25_000_000, max_test_docs=64_000):
+def download_and_tokenize_c4(output_dir='build', seq_len=64, num_workers=None, max_train_docs=25_000_000, max_test_docs=64_000):
     """
     Download C4 dataset (limited size) and create pre-tokenized corpus files.
 
