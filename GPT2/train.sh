@@ -48,9 +48,9 @@ BATCH_TRAIN=32
 BATCH_EVAL=32
 DROPOUT=0
 USE_RELU=1
-LEARNING_RATE=0.00003
+LEARNING_RATE=0.00001
 POST_POWER_NORM=0
-USE_AMP=1  # Mixed precision (BF16) - 3x faster, 43% less memory
+USE_AMP=0  # Mixed precision (BF16) - 3x faster, 43% less memory
 
 # Training steps
 TOTAL_STEPS=1000000
